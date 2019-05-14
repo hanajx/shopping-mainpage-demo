@@ -1,0 +1,352 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+/*------------------------topbar*/
+.topbar {
+  width: 100%;
+  position: fixed;
+  color: white;
+  font-size: 12px;
+  z-index: 10;
+}
+
+/*header*/
+header {
+  background-color: rgb(53, 54, 47);
+  padding: 1px 0;
+  text-align: center;
+}
+
+/*navigation*/
+nav>ul {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 32px;
+  overflow: hidden;
+  background-color: white;
+}
+nav>ul>li {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#blank {
+  flex: 1;
+}
+
+nav>ul>li>a {
+  display: block;
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  padding: 8px 0;
+  margin: 14px 14px;
+  text-decoration: none;
+}
+
+.icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.icon a {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#l1:hover>a, #l2:hover>a, #l3:hover>a,
+#l4:hover>a, #l5:hover>a, #l6:hover>a,
+#signin:hover>a {
+  background-image: url("../asset/line-clay-bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/*dropdowns*/
+.dropdowns {
+  position: fixed;
+  left: 1.8%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-image: url("../asset/dropdown_bg.jpg");
+  background-size: contain;
+  background-color: white;
+  color: black;
+  width: 96.4%;
+  padding: 10px 0;
+}
+.dropdowns img {
+  padding: 0 10px;
+  width: 300px;
+  height: 300px;
+}
+.dropdowns {
+  display: none;
+}
+.dropdowns ul {
+  list-style-type: none;
+  padding: 0 15px;
+}
+.dropdowns li {
+  padding-bottom: 12px;
+}
+.dropdowns h3 {
+  padding: 0;
+  margin: 0;
+}
+.dropdowns a {
+  text-decoration: none;
+  color: inherit;
+}
+.dropdowns li a:hover {
+  text-decoration: underline;
+}
+
+#l2:hover .dropdown-content-bags,
+#l3:hover .dropdown-content-accessories,
+#l4:hover .dropdown-content-experiences {
+  display: flex;
+}
+/*----------------------main body*/
+main {
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: cursive;
+}
+
+#summerShopping2 img {
+  padding-top: 80px;
+  width: 96.4%;
+}
+
+#summerShopping2>p {
+  padding: 0;
+  margin: 0;
+}
+
+/*.photos{
+  position: relative;
+  margin: 2vw;
+}
+.sea{
+  float: left;
+  width: 61vw;
+  height: 34.6vw;
+  margin-bottom: 2vw;
+  background-image: url("../asset/sea.jpg");
+  background-size: 100% 100%;
+}
+.rightSide{
+  float: right;
+}
+.car{
+  margin-bottom: 1vw;
+  width: 30vw;
+  height: 51.5vw;
+  background-image: url("../asset/cars.jpg");
+  background-size: 100% 100%;
+}
+.game{
+  width: 30vw;
+  height: 36.5vw;
+  background-image: url("../asset/games.jpg");
+  background-size: 100% 100%;
+}
+.leftSide{
+  float: left;
+}
+.gun{
+  width: 30vw;
+  height: 36.5vw;
+  background-image: url("../asset/guns.jpg");
+  background-size: 100% 100%;
+}
+.tiffany{
+  float: left;
+  width: 30vw;
+  height: 51.5vw;
+  background-image: url("../asset/tiffany_jewel.jpg");
+  background-size: 100% 100%;
+}
+.jocker{
+  float: left;
+  width: 30vw;
+  height: 51.5vw;
+  background-image: url("../asset/jocker.jpg");
+  background-size: 100% 100%;
+}
+.steak{
+  float: right;
+  width: 61vw;
+  height: 34.6vw;
+  background-image: url("../asset/steak.jpg");
+  background-size: 100% 100%;
+}*/
+
+.photos {
+  padding: 2.1%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(17, 13vh);
+  grid-gap: 20px 40px;
+}
+.photos>div:hover {
+  cursor: pointer;
+}
+.sea {
+  background-image: url("../asset/sea.jpg");
+  background-size: 100% 100%;
+  grid-area: 1/1/6/3;
+}
+.car {
+  background-image: url("../asset/cars.jpg");
+  background-size: 100% 100%;
+  grid-area: 1/3/8/4;
+}
+.gun {
+  background-image: url("../asset/guns.jpg");
+  background-size: 100% 100%;
+  grid-area: 6/1/11/2;
+}
+.jocker {
+  background-image: url("../asset/jocker.jpg");
+  background-size: 100% 100%;
+  grid-area: 6/2/13/3;
+}
+.game {
+  background-image: url("../asset/games.jpg");
+  background-size: 100% 100%;
+  grid-area: 8/3/13/4;
+}
+.tiffany {
+  background-image: url("../asset/tiffany_jewel.jpg");
+  background-size: 100% 100%;
+  grid-area: 11/1/18/2;
+}
+.steak {
+  background-image: url("../asset/steak.jpg");
+  background-size: 100% 100%;
+  grid-area: 13/2/18/4;
+}
+
+/*----------------hide photos*/
+.hiding {
+  /*max-width: 100%;
+max-height: 100%;*/
+  display: none;
+  background-color: white;
+  opacity: .8;
+  margin: 3%;
+  padding: 0;
+}
+.hiding img {
+  max-width: 76%;
+  margin-top: 5%;
+}
+
+.sea-content, .steak-content {
+  width: 97%;
+  height: 95%;
+  margin: 1.5%;
+}
+.car-content, .tiffany-content {
+  height: 96%;
+  padding-bottom: 1.5%;
+}
+.gun-content, .game-content {
+  height: 95%;
+  padding-bottom: 1%;
+}
+.jocker-content {
+  height: 97%;
+}
+.game-content img {
+  max-width: 60%;
+}
+.jocker-content img {
+  margin-top: 55%;
+}
+
+.sea:hover .sea-content,
+.car:hover .car-content,
+.gun:hover .gun-content,
+.jocker:hover .jocker-content,
+.game:hover .game-content,
+.tiffany:hover .tiffany-content,
+.steak:hover .steak-content {
+  display: block;
+}
+
+.firstLine {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.secondLine {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/*Back to top*/
+.backToTop {
+  position: fixed;
+  bottom: 60px;
+  right: 35px;
+}
+
+/*footer*/
+footer {
+  background-color: rgb(53, 54, 47);
+  text-align: center;
+  padding: 9px;
+  margin: 0;
+}
+
+footer a {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:active {
+  text-decoration: underline;
+}
+
+/*------------------------media query for page size*/
+@media only screen and (max-width: 768px) {
+  nav {
+    float: left;
+    height: 100%;
+  }
+  nav>ul {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+  /* nav>ul>li {
+    display: none;
+  } */
+  .soda {
+    margin-top: 3%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 11px;
+  }
+}
